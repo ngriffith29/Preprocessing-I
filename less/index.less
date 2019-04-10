@@ -54,6 +54,240 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
+}
+
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,400,600');
+
+@main-font: 'overpass', sanserif;
+
+
+.main-container {
+
+	margin:1%;
+	width: 90%;
+	.header{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+		.div-header{
+			border: .40rem solid transparent;
+			border-image: linear-gradient(45deg, #ff9ff3, #B4D2E7, #9f4580,  ) ;
+			border-image-slice: 1;
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+			padding-left: 10rem;
+			padding-right: 10rem;
+
+			@media(max-width: 500px){
+				border: 0px;
+			}
+		}	
+		h1{
+			font-family: @main-font;
+		};
+	}
+	.nav{
+		display: flex;
+		justify-content: center;
+	
+		
+		}
+	
+
+		a {
+			font-family: @main-font;
+			margin-top: 1%;
+			font-size: .85rem;
+		   display: flex;
+		   margin-right: 1%;
+		   color: black;
+		   @media(max-width: 500px){
+			visibility: hidden;
+		}
+	
+	}
+
+	.avi {
+		.nav;
+		img {
+			margin-top: 2%;
+			margin-bottom: 2%;
+			border-radius: 50%;
+			width: 20%;
+			height: 20%;
+		
+
+		}
+	}
+
+
+	.left-right{
+		max-width: 100%;
+		display: flex;
+		justify-content: center
+	}
+
+
+	.left{
+		
+		margin-right: 1%;
+		
+		height: 80%;
+		max-width: 40%;
+		padding-right: 5%;
+		border-right:  5px;
+		border-style: solid;
+		border-image: 
+    linear-gradient(
+      to bottom, 
+      #0abde3, 
+      rgba(0, 171, 222, .1)
+	) 1 100%;
+	@media(max-width: 500px){
+		border: 0px;
+	}
+
+	
+		h2 {
+			font-family: @main-font;
+			font-size: 2rem;
+			margin-bottom: 4%;
+		}
+
+		h3{
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1.5rem;
+
+		}
+	
+		.intro{
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 5%;
+			h2{
+				max-width: 500px;
+			}
+			p {
+				max-width: 500px;
+			}
+			
+		}
+
+
+		
+
+
+		.exp {
+			margin-top: 3%;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.pos-1 {
+			margin-top: 10%;
+			margin-bottom: 1.5%;
+			.intro;
+		}
+		.dates{
+			.intro;
+			margin-bottom: 2%;
+			color: grey;
+			font-size:.85rem;
+		}
+	
+	}
+	.right{
+	
+
+		height: 80%;
+		width: 40%;
+		
+
+		.skills {
+			margin-bottom: 4%;
+			font-size: 2rem;
+		
+		}
+
+	.progress {
+		margin-top: 1%;
+		margin-bottom: 1%;
+	width: 5rem;
+	height: .5rem;
+	}
+
+.skill-group{
+	display: flex;
+	flex-wrap: wrap;
+	width: auto;
+	
+	.progress{
+		margin-right: 10%;
+	}
+
+
+}
+
+
+
+
+	.ed{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 2rem;
+
+	
+		
+	}
+
+	.education {
+		p{
+			font-size: 1.5rem;
+		}
+	}
+
+	
+
+	.small{
+		margin-top: 1%;
+		margin-bottom: 3%;
+		font-size: 1rem;
+		
+	}
+
+.ref {
+	h2{
+		font-size: 2rem;
+	}
+	h4{
+		font-size: 1.5rem;
+		margin-top: 3%;
+		margin-bottom: 1%;
+	}
+	p {
+		font-size: .50rem;
+	}
+	.bot-p{
+		margin-top: 4%;
+	}
+
+	
+}
+
+
+		
+	}
+	
+
+
+}
+footer{
+	display: block;
+	margin-left: 40%;
+	font-size: 1rem;
+	
 }
 
